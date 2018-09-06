@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class='container'>
+    </section>
+    <script>
+        const container = document.querySelector('.container');
+        let bok = parseInt(prompt('Podaj nieparzystą liczbę'));
+        for (let i = 0; i < bok; i++) {
+            let div = document.createElement("div");
+            container.appendChild(div);
+            container.style.width = (100 * bok) + 'px';
+            container.style.border = "2px solid black";
+
+            for (let j = 1; j < bok; j++) {
+                let div2 = document.createElement("div");
+                container.appendChild(div2);
+            }
+        }
+    </script>
+</body>
+</html>
